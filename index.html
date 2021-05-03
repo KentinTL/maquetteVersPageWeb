@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,42 +12,42 @@
 <body>
   <header>
     <img src="" alt="Reservia-Logo">
-      <nav>
-        <ul>
-          <li>Hébergements</li>
-          <li>Activités</li>
-          <li>S'inscrire</li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li>Hébergements</li>
+        <li>Activités</li>
+        <li>S'inscrire</li>
+      </ul>
+    </nav>
   </header>
 
   <div id="body-page">
     <section id="container-high">
-      <div id="description">
+      <header id="description">
         <h2>Trouvez cotre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
-      </div>
+      </header>
             
       <div id="search-bar">
-          <img src="" alt="">
-          <input type="text">
-          <button>Rechercher</button>
+        <img src="" alt="">
+        <input type="text">
+        <button>Rechercher</button>
       </div>
             
       <section id="filters">
         <h3>Filtres</h3>
-          <ul>
-            <li><img src="" alt="Logo-Eco">Economique</li>
-            <li><img src="" alt="Logo-Stickman">Familial</li>
-            <li><img src="" alt="Logo-Heart">Romantique</li>
-            <li><img src="" alt="Logo-Dog">Animaux autorisés</li>
-          </ul>
+        <ul>
+          <li><img src="" alt="Logo-Eco">Economique</li>
+          <li><img src="" alt="Logo-Stickman">Familial</li>
+          <li><img src="" alt="Logo-Heart">Romantique</li>
+          <li><img src="" alt="Logo-Dog">Animaux autorisés</li>
+        </ul>
       </section>
             
-      <div id="end-container-high">
+      <footer id="end-container-high">
         <img src="" alt="Information">
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
+      </footer>
     </section>
 
     <section id="container-housing">
@@ -88,10 +87,10 @@
       </article>
 
       <aside class="housing-details">
-        <div class="housing-card">
+        <header class="housing-card">
           <h2>Les plus populaires</h2>
           <img src="" alt="Logo-Up">
-        </div>
+        </header>
         <div class="housing-card">
           <img src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image de l'hébergement">
           <h3>Hôtel Le soleil du matin</h3>
@@ -108,65 +107,71 @@
           <p>Nuit à partir de 58€</p>
         </div>
       </aside>
+      
     </section>
 
-      <section id="container-activitys">
-        <h2>Activité à Marseille</h2>
-        <div class="pack-of-3">
-          <div class="activity-card">
-            <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image de l'activité">
-            <h3>Vieux Port</h3>
-          </div>
-          <div class="activity-card">
-            <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image de l'activité">
-            <h3>Fort de Pamègues</h3>
-          </div>
-          <div class="activity-card">
-            <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image de l'activité">
-            <h3>Îles du Frioul</h3>
-          </div>
-        </div>
-        <div class="pack-of-3">
-          <div class="activity-card">
-            <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image de l'activité">
-            <h3>Parc National des Calanques</h3>
-          </div>
-          <div class="activity-card">
-            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image de l'activité">
-            <h3>Notre-Dame-de-la-Garde</h3>
-          </div>
-          <div class="activity-card">
-            <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image de l'activité">
-            <h3>Parc Longchamp</h3>
-        	</div>
-        </div>
-      </section>    
-    </div>
+    <section id="container-activitys">
+      <h2>Activité à Marseille</h2>
 
-    <footer>
-        <section id="footer-left">
-          <h3>A propos</h3>
-          <ul>
-            <li>Foncionnement du site</li>
-            <li>Conditions générales de ventes</li>
-            <li>Données et confidentialité</li>
-          </ul>
-        </section>
-        <section id="footer-center">
-          <h3>Nos hébergements</h3>
-          <ul>
-            <li>Charte qualité</li>
-            <li>Soumettre cotre hôtel</li>
-          </ul>
-        </section>
-        <section id="footer-right">
-          <h3>Assistance</h3>
-          <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-          </ul>
-        </section>
-    </footer>
+      <figure class="activity-card">
+        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image de l'activité">
+        <figcaption>Vieux Port</figcaption>
+      </figure>
+
+      <div class="cardX2">
+        <figure class="activity-card">
+          <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image de l'activité">
+          <figcaption>Fort de Pamègues</figcaption>
+        </figure>
+        <figure class="activity-card">
+          <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image de l'activité">
+          <figcaption>Îles du Frioul</figcaption>
+        </figure>
+      </div>
+
+      <figure class="activity-card">
+        <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image de l'activité">
+        <figcaption>Parc National des Calanques</figcaption>
+      </figure>
+
+      <div class="cardX2">
+        <figure class="activity-card">
+          <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image de l'activité">
+          <figcaption>Notre-Dame-de-la-Garde</figcaption>
+        </figure>
+        <figure class="activity-card">
+          <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image de l'activité">
+          <figcaption>Parc Longchamp</figcaption>
+        </figure>
+      </div>
+    </section> 
+  
+  </div>
+
+  <footer>
+    <section id="footer-left">
+      <h4>A propos</h4>
+      <ul>
+        <li>Foncionnement du site</li>
+        <li>Conditions générales de ventes</li>
+        <li>Données et confidentialité</li>
+      </ul>
+    </section>
+    <section id="footer-center">
+      <h4>Nos hébergements</h4>
+      <ul>
+        <li>Charte qualité</li>
+        <li>Soumettre cotre hôtel</li>
+      </ul>
+    </section>
+    <section id="footer-right">
+      <h4>Assistance</h4>
+      <ul>
+        <li>Centre d'aide</li>
+        <li>Nous contacter</li>
+      </ul>
+    </section>
+  </footer>
 </body>
 
 </html>
