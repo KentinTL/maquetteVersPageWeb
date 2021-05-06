@@ -1,0 +1,57 @@
+/*HEADER*/
+#header-princ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#header-princ img {
+  height: 40px;
+  width: 80px;
+}
+
+#nav-list {
+  display: flex;
+  list-style: none;
+}
+
+#nav-list li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#sign-in {
+  color: #0065FC;
+}
+
+/*BODY*/
+
+
+/*FOOTER*/
+#global-footer {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+}
+
+#global-footer li {
+  list-style: none;
+}
+
+#global-footer ul {
+  padding: 0;
+}
+
+#footer-left {
+  margin-right: 20%;
+  margin-left: 2%;
+}
+
+#footer-center {
+  margin-right: 20%;
+}
+
+#footer-right {
+  margin-right: auto;
+}
