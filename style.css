@@ -138,10 +138,11 @@ body {
 
 /*ARTICLE*/
 #container-housing {
+  align-self: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
 }
 
 #housing-article {
@@ -179,6 +180,8 @@ body {
   border-radius: 15px;
   margin-top: 30px;
   padding: 5px;
+  width: 210px;
+  height: 175px;
 }
 
 .article-card img {
@@ -187,6 +190,29 @@ body {
   height: 100px;
   object-fit: cover;
   width: 200px;
+}
+
+.article-card h3 {
+  font-size: 14px;
+  margin: 3px;
+}
+
+.article-card p {
+  font-size: 12px;
+  margin: 3px;
+}
+
+
+.article-card ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 3px;
+  padding: 0;
+}
+
+.article-card i {
+  color: #0065FC;
 }
 
   /*ASIDE*/
@@ -231,6 +257,12 @@ body {
 
 .aside-card div {
   margin-left: 20px;
+}
+
+.aside-card div > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 /*END BODY*/
