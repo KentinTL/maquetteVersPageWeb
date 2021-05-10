@@ -172,6 +172,7 @@ body {
 .article-card {
   background-color: white;
   border-radius: 15px;
+  box-shadow: 2px 2px 8px;
   margin-top: 30px;
   padding: 5px;
   width: 30%;
@@ -226,14 +227,14 @@ body {
   border-radius: 15px;
   padding-left: 40px;
   padding-right: 40px;
-  width: 30%;
+  width: 25%;
 }
 
 #aside-title {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: row; 
   width: 100%;
 }
 
@@ -248,10 +249,9 @@ body {
 .aside-card {
   background-color: white;
   border-radius: 15px;
+  box-shadow: 2px 2px 8px;
   display: flex;
   flex-direction: row;
-  margin-right: auto;
-  margin-left: auto;
   padding: 5px;
   width: 100%;
 }
@@ -269,16 +269,16 @@ body {
   flex-grow: 0;
   flex-shrink: 1;
   flex-wrap: wrap;
-  padding-top:10px;
-  padding-left:15px;
+  padding-top: 10px;
+  padding-left: 15px;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .aside-card h3 {
   font-size: 16px;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .aside-card p {
