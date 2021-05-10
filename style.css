@@ -156,39 +156,25 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 62%;
-}
-
-
-#housing-article footer {
-  margin-left: 136px;
-}
-
-#article-title {
-  margin-left: 136px;
-  margin-bottom: -30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 65%;
 }
 
 #housing-details {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-between;
   margin-top: 0px;
-  width: 80%;
 }
 
 .article-card {
   background-color: white;
   border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 30px;
   padding: 5px;
-  width: 260px;
-  height: 225px;
+  width: 30%;
 }
 
 .article-card img {
@@ -196,7 +182,7 @@ body {
   border-top-right-radius: 15px;
   height: 150px;
   object-fit: cover;
-  width: 250px;
+  width: 100%;
 }
 
 .article-card h3 {
@@ -227,20 +213,28 @@ body {
   color: #0065FC;
 }
 
+.article-card i.grey-star {
+  color: #F2F2F2;
+}
+
   /*ASIDE*/
 #housing-aside {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #F2F2F2;
   border-radius: 15px;
-  width: 20%;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 30%;
 }
 
 #aside-title {
   align-items: baseline;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
+  width: 100%;
 }
 
 #aside-details {
@@ -259,7 +253,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 5px;
-  width: 290px;
+  width: 100%;
 }
 
 .aside-card img {
@@ -271,33 +265,42 @@ body {
 }
 
 .aside-card div {
-  align-self: center;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  padding-top:10px;
+  padding-left:15px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .aside-card h3 {
   font-size: 16px;
-  margin-left: 15px;
-  margin-top: -2px;
+  margin:0;
+  padding:0;
 }
 
 .aside-card p {
   font-size: 14px;
-  margin-left: 15px;
-  margin-top: -8px;
+  margin:0;
+  padding:0;
 }
 
 .aside-card ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin-left: 15px;
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
 .aside-card i {
   color: #0065FC;
+}
+
+.aside-card i.grey-star {
+  color: #F2F2F2;
 }
 
 /*END BODY*/
