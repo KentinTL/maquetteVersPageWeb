@@ -149,6 +149,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -318,6 +319,7 @@ body {
 #container-activitys {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 #activitys-details {
@@ -333,7 +335,7 @@ body {
   box-shadow: 2px 2px 8px;
   display: flex;
   flex-direction: column;
-  height: 375px;
+  height: 395px;
   margin: 0;
   text-align: center;
   width: 20%;
@@ -342,13 +344,20 @@ body {
 .activity-card img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  height: 325px;
+  height: 345px;
   object-fit: cover;
   width: 100%;
 }
 
+.activity-card figcaption {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
 .cardX2 {
-  text-align: center;
   width: 20%;
   margin: 0%;
 }
@@ -370,9 +379,28 @@ body {
   width: 100%;
 }
 
+.activity-card-lite-up {
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px;
+  height: 200px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.activity-card-lite-up img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .cardX2 figcaption {
   display: flex;
-  align-self: baseline;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 15px;
 }
   /* END ACTIVITY */
 
@@ -401,6 +429,7 @@ body {
 #my-footer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
   width: 75%;
 }
 
