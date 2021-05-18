@@ -93,11 +93,13 @@ body {
 #filters {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 #filters ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 9px;
 }
@@ -147,6 +149,7 @@ body {
 #container-housing {
   align-self: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -318,6 +321,7 @@ body {
   /* ACTIVITY */
 #container-activitys {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 40px;
 }
@@ -325,6 +329,7 @@ body {
 #activitys-details {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -411,6 +416,7 @@ body {
   background-color: #F2F2F2;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   padding-left: 60px;
   padding-right: 60px;
@@ -428,9 +434,61 @@ body {
 
 #my-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
   width: 75%;
 }
 
 /*END FOOTER*/
+
+/* MEDIA */
+@media screen and (max-width: 640px) {
+  #body-page {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  #container-housing {
+    flex-direction: column-reverse;    
+  }
+
+  #housing-article, #housing-aside {
+    width: 100%;
+  }
+
+  #housing-details {
+    width: 100%;
+  }
+
+  .article-card {
+    width: 100%;
+  }
+  
+  .activity-card {
+    height: 180px;
+    width: 100%;
+  }
+
+  .activity-card img {
+    height: 130px;
+  }
+
+  .activity-card-lite-up {
+    height: 180px;
+  }
+
+  .activity-card-lite-up img {
+    height: 130px;
+  }
+
+  .cardX2 {
+    width: 100%;
+  }
+
+  #my-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
