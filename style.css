@@ -453,6 +453,10 @@ body {
     flex-direction: column-reverse;    
   }
 
+  #housing-article {
+    background-color: white;
+  }
+
   #housing-article, #housing-aside {
     width: 100%;
   }
