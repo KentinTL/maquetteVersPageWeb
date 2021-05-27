@@ -108,6 +108,12 @@ body {
   padding: 10px;
 }
 
+
+#description h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 #filters {
   align-items: center;
   display: flex;
@@ -461,15 +467,16 @@ body {
 /*END FOOTER*/
 
 /* MEDIA */
-@media screen and (max-width: 640px) {
+  /* TABLET */
+@media screen and (min-width: 680px) and (max-width: 1024px) {
   #body-page {
     padding-left: 25px;
     padding-right: 25px;
   }
 
   #header-princ {
-    padding: 0;
     align-items: center;
+    padding: 0;
   }
 
   #header-princ img {
@@ -478,8 +485,8 @@ body {
   }
 
   #nav-list {
-    width: 100%;
     order: 3;
+    width: 100%;
   }
 
   #ancore {
@@ -490,13 +497,202 @@ body {
     width: 100%;
   }
 
+  #blue-border {
+    border-bottom: solid 2px #0065FC ;
+  }
+
+  #grey-border {
+    border-bottom: solid 2px #F2F2F2;
+  }
+
   #nav-list li {
     justify-content: center;
     margin-left: 0;
-    width: 50%;
+    padding-bottom: 10px;
     text-align: center;
+    width: 50%;
   } 
 
+  #sign-in {
+    order: 2;
+    padding-right: 20px;
+  }
+  /* END HEADER */
+  
+  /* BODY-PAGE */
+  /* CONTAINER-HIGH */
+  #description {
+    text-align: center;
+  }
+
+  #search-bar {
+    justify-content: center;
+  }
+
+  #filters {
+    justify-content: space-between;
+  }
+
+  #filters ul {
+    padding: 0;
+  }
+
+  #end-container-high {
+    align-self: flex-start;
+  }
+  /* END CONTAINER-HIGH */
+
+  #container-housing {
+    flex-direction: column-reverse;  
+    width: 100%;  
+  }
+
+  #housing-aside {
+    background-color: inherit;
+  }
+
+  #aside-details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .aside-card {
+    margin: 10px;
+    width: 40%;
+  } 
+
+  #housing-article, #housing-aside {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  
+  #housing-article {
+    background-color: white;
+  }
+
+  #housing-details {
+    width: 100%;
+  }
+  /* END ASIDE */
+  
+  /* ACTIVITY */
+  #activitys-details {
+    text-align: center;
+  }
+  .activity-card {
+    height: 180px;
+    width: 30%;
+  }
+
+  .activity-card img {
+    height: 130px;
+  }
+
+  .activity-card figcaption {
+    display: inherit;
+    margin-top: 7;
+    margin-left: 0;
+  }
+
+  .cardX2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .activity-card-lite {
+    height: 180px;
+    margin-left: 30px;
+    width: 100%;
+  }
+
+  .activity-card-lite figcaption {
+    display: inherit;
+    margin-top: 7px;
+    margin-left: 0;
+  }
+
+  .activity-card-lite-up {
+    height: 180px;
+    margin-left: 30px;
+    width: 100%;
+  }
+
+  .activity-card-lite-up img {
+    height: 130px;
+  }
+
+  .activity-card-lite-up figcaption {
+    display: inherit;
+    margin-top: 7px;
+    margin-left: 0;
+  }
+
+  /* END ACTIVITY */
+
+  /* FOOTER */
+  #global-footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #my-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  /* END FOOTER */
+}
+  /* END TABLET */
+
+  /* PHONE */
+@media screen and (max-width: 680px) {
+  #body-page {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  #header-princ {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  #header-princ img {
+    order: 1;
+    padding-left: 20px;
+  }
+
+  #nav-list {
+    order: 3;
+    width: 100%;
+  }
+
+  #ancore {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  #blue-border {
+    border-bottom: solid 2px #0065FC ;
+  }
+
+  #grey-border {
+    border-bottom: solid 2px #F2F2F2;
+  }
+
+  #nav-list li {
+    justify-content: center;
+    margin-left: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 50%;
+  } 
 
   #sign-in {
     order: 2;
@@ -515,7 +711,7 @@ body {
   }
 
   #filters li {
-    margin: 0;
+    margin: 2px;
   }
 
   #end-container-high {
@@ -523,15 +719,33 @@ body {
   }
 
   #container-housing {
-    flex-direction: column-reverse;    
+    flex-direction: column-reverse;  
   }
 
-  #housing-article {
-    background-color: white;
+  #housing-aside {
+    background-color: inherit;
+    justify-content: center;
+    margin: 0;
   }
+
+  .aside-details {
+    width: 100%;
+  }
+
+  .aside-card {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } 
 
   #housing-article, #housing-aside {
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
+  }
+  
+  #housing-article {
+    background-color: white;
   }
 
   #housing-details {
@@ -539,6 +753,7 @@ body {
   }
 
   .article-card {
+    height: 230px;
     width: 100%;
   }
   
