@@ -99,6 +99,15 @@ body {
   padding: 9.5px;
 }
 
+#search-bar button span {
+  display: inline;
+}
+
+#search-bar button i {
+  display: none;
+  background-color: inherit;
+}
+
 #search-bar button {
   background-color: #0065FC;
   border: none;
@@ -263,8 +272,6 @@ body {
   justify-content: flex-start;
   background-color: #F2F2F2;
   border-radius: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
   width: 25%;
 }
 
@@ -272,8 +279,10 @@ body {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  flex-direction: row; 
-  width: 100%;
+  flex-direction: row;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 90%;
 }
 
 #aside-details {
@@ -282,6 +291,9 @@ body {
   flex-direction: column;
   margin-bottom: 50px;
   margin-top: 0px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 .aside-card {
@@ -467,8 +479,21 @@ body {
 /*END FOOTER*/
 
 /* MEDIA */
-  /* TABLET */
-@media screen and (min-width: 680px) and (max-width: 1024px) {
+  /* BIG TABLET */
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+  #housing-aside {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .aside-card img {
+    width: 80px;
+  }
+}
+  /* END BIG TABLET */
+
+  /* CLASSIC TABLET */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
   #body-page {
     padding-left: 25px;
     padding-right: 25px;
@@ -527,6 +552,20 @@ body {
 
   #search-bar {
     justify-content: center;
+    align-items: end;
+  }
+
+  #search-bar input {
+    width: 60%;
+  }
+
+  #search-bar button span {
+    display: inline;
+  }
+
+  #search-bar button i {
+    display: none;
+    background-color: inherit;
   }
 
   #filters {
@@ -591,9 +630,12 @@ body {
   }
 
   .activity-card figcaption {
-    display: inherit;
-    margin-top: 7;
+    display: flex;
+    margin-top: 0;
     margin-left: 0;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
   }
 
   .cardX2 {
@@ -610,9 +652,12 @@ body {
   }
 
   .activity-card-lite figcaption {
-    display: inherit;
-    margin-top: 7px;
+    display: flex;
+    margin-top: 0;
     margin-left: 0;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
   }
 
   .activity-card-lite-up {
@@ -648,10 +693,9 @@ body {
   /* END TABLET */
 
   /* PHONE */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 640px) {
   #body-page {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0;
   }
 
   #header-princ {
@@ -702,8 +746,38 @@ body {
   
   /* BODY-PAGE */
   /* CONTAINER-HIGH */
+  #container-high {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   #description {
     text-align: left;
+  }
+
+  #search-bar {
+    height: 37px;
+  }
+
+  #search-bar button {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    height: 37px;
+    justify-content: center;
+    margin-left: -12px;
+    width: 37px;
+  }
+
+  #search-bar button span {
+    display: none;
+  }
+
+  #search-bar button i {
+    background-color: transparent;
+    display: inline;
+    height: 37px;
+    width: 37px;
   }
 
   #filters ul {
@@ -723,12 +797,12 @@ body {
   }
 
   #housing-aside {
-    background-color: inherit;
+    border-radius: 0px;
     justify-content: center;
     margin: 0;
   }
 
-  .aside-details {
+  #aside-details {
     width: 100%;
   }
 
@@ -738,9 +812,9 @@ body {
     margin-bottom: 10px;
   } 
 
-  #housing-article, #housing-aside {
-    padding-left: 0;
-    padding-right: 0;
+  #housing-article, #housing-aside, #container-activitys, #global-footer {
+    padding-left: 25px;
+    padding-right: 25px;
     width: 100%;
   }
   
@@ -782,5 +856,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  #img-princ {
+    width: 50%;
   }
 }
