@@ -57,6 +57,14 @@ body {
   list-style-type: none;
 }
 
+#blue-border :hover{
+  border-bottom: solid 2px #0065FC ;
+}
+
+#grey-border :hover{
+  border-bottom: solid 2px #0065FC ;
+}
+
 #sign-in {
   color: #0065FC;
   display: block;
@@ -151,7 +159,7 @@ body {
   z-index: 1;
 }
 
-#filter li :hover {
+#filters li:hover {
   background-color: #DEEBFF;
 }
 
@@ -170,7 +178,7 @@ body {
   z-index: 2;
 }
 
-#filter li > i :hover {
+#filters li > i:hover {
   background-color: white;
 }
 
