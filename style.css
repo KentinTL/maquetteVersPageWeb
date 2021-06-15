@@ -151,6 +151,10 @@ body {
   z-index: 1;
 }
 
+#filter li :hover {
+  background-color: #DEEBFF;
+}
+
 #filters li > i {
   align-items: center;
   color: #0065FC;
@@ -164,6 +168,10 @@ body {
   top: -2px;
   width: 50px;
   z-index: 2;
+}
+
+#filter li > i :hover {
+  background-color: white;
 }
 
 #end-container-high {
