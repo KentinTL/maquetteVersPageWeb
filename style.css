@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 /* font-family: 'Raleway', sans-serif; */
 
 body {
@@ -49,6 +57,8 @@ body {
 #nav-list li > a:link {
   color: black;
   text-decoration: none;
+  padding-top: 20px;
+
 }
 
 #ancore {
@@ -57,19 +67,9 @@ body {
   list-style-type: none;
 }
 
-#blue-border :hover{
-  border-bottom: solid 2px #0065FC ;
-}
-
-#grey-border :hover{
-  border-bottom: solid 2px #0065FC ;
-}
-
-#sign-in {
+.blue-border :hover{
   color: #0065FC;
-  display: block;
-  font-weight: bold;
-  margin-left: 50px;
+  border-top: solid 2px #0065FC ;
 }
 /*END HEADER*/
 
@@ -277,7 +277,7 @@ body {
 }
 
 .article-card i.grey-star {
-  color: #F2F2F2;
+  color: rgb(207, 207, 207);
 }
   /* END ARTICLE */
 
@@ -295,7 +295,6 @@ body {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   margin-left: auto; 
   margin-right: auto; 
   width: 90%;
@@ -317,7 +316,7 @@ body {
   border-radius: 15px;
   box-shadow: 2px 2px 8px;
   display: flex;
-  flex-direction: row;
+  margin-bottom: 20px;
   padding: 5px;
   width: 100%;
 }
@@ -366,7 +365,7 @@ body {
 }
 
 .aside-card i.grey-star {
-  color: #F2F2F2;
+  color: rgb(207, 207, 207);
 }
   /* END ASIDE */
 
@@ -477,6 +476,7 @@ body {
 
 #global-footer li {
   list-style: none;
+  margin-top: 10px;
 }
 
 #global-footer ul {
@@ -496,7 +496,7 @@ body {
 
 /* MEDIA */
   /* BIG TABLET */
-@media screen and (min-width: 1025px) and (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   #housing-aside {
     padding-left: 0px;
     padding-right: 0px;
@@ -509,7 +509,7 @@ body {
   /* END BIG TABLET */
 
   /* CLASSIC TABLET */
-@media screen and (min-width: 641px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #body-page {
     padding-left: 25px;
     padding-right: 25px;
