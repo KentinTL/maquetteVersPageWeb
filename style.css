@@ -153,6 +153,7 @@ body {
 #filters p {
   color: black;
   font-weight: bold;
+  font-size: 18px;
 }
 
 #filters ul {
@@ -167,15 +168,13 @@ body {
   border: solid 2px #F2F2F2;
   color: black;
   font-weight: bold;
+  border: #D9D9D9 solid 1px;
   border-radius: 30px;
   display:  flex;
-  height: 50px;
-  margin-left: 10px;
-  margin-right: 20px;
-  padding-left: 60px;
-  padding-right: 15px;
-  position: relative;
-  z-index: 1;
+  font-size: 18px;
+  height: 60px;
+  margin-left: 40px;
+  padding-right: 30px;
 }
 
 #filters li:hover {
@@ -185,20 +184,10 @@ body {
 #filters li > i {
   align-items: center;
   color: #0065FC;
-  background-color: #DEEBFF;
-  border-radius: 50%;
   display: flex;
   height: 50px;
   justify-content: center;
-  left: -1px;
-  position: absolute;
-  top: -2px;
   width: 50px;
-  z-index: 2;
-}
-
-#filters li > i:hover {
-  background-color: white;
 }
 
 #end-container-high {
@@ -207,15 +196,10 @@ body {
   flex-direction: row;
 }
 
-#end-container-high .information {
-  border: #0065FC solid 0.5px;
-  border-radius: 10px;
-  padding: 3px;
-}
-
 #end-container-high i {
   color: #0065FC;
-  margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
 }
   /* END CONTAINER-HIGH */
 
@@ -259,7 +243,7 @@ body {
 .article-card {
   background-color: white;
   border-radius: 15px;
-  box-shadow: 2px 2px 8px;
+  box-shadow: #D9D9D9 2px 2px 8px;
   margin-top: 30px;
   padding: 5px;
   width: 30%;
@@ -327,25 +311,26 @@ body {
 
 #aside-title i {
   color: #0065FC;
+  font-size: 24px;
 }
 
 #aside-details {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 0px; 
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }
 
 .aside-card {
   background-color: white;
   border-radius: 15px;
-  box-shadow: 2px 2px 8px;
+  box-shadow: #D9D9D9 2px 2px 8px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding: 5px;
   width: 100%;
 }
@@ -353,7 +338,7 @@ body {
 .aside-card img {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  height: 135px;
+  height: 145px;
   object-fit: cover;
   width: 135px;
 }
@@ -420,13 +405,11 @@ body {
 
 .activity-card {
   border-radius: 15px;
-  box-shadow: 2px 2px 8px;
   display: flex;
   flex-direction: column;
-  height: 395px;
   margin: 0;
   text-align: center;
-  width: 20%;
+  width: 300px;
 }
 
 .activity-card img {
@@ -445,51 +428,6 @@ body {
   margin-left: 15px;
 }
 
-.cardX2 {
-  width: 20%;
-  margin: 0%;
-}
-
-.activity-card-lite {
-  border-radius: 15px;
-  box-shadow: 2px 2px 8px;
-  height: 180px;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
-
-.activity-card-lite img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  height: 130px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.activity-card-lite-up {
-  border-radius: 15px;
-  box-shadow: 2px 2px 8px;
-  height: 200px;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
-
-.activity-card-lite-up img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  height: 150px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.cardX2 figcaption {
-  display: flex;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 15px;
-}
   /* END ACTIVITY */
 
 /*END BODY*/
@@ -501,8 +439,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 120px;
+  padding-right: 100px;
   width: 100%;
 }
 
@@ -522,6 +460,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
+  margin-top: 40px;
   width: 75%;
 }
 
@@ -601,7 +540,7 @@ body {
 
   #search-bar {
     justify-content: center;
-    align-items: end;
+    align-items: center;
   }
 
   #search-bar input {
@@ -819,7 +758,8 @@ body {
 
   #search-bar button {
     align-items: center;
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     display: flex;
     height: 37px;
     justify-content: center;
@@ -834,8 +774,8 @@ body {
   #search-bar button i {
     background-color: transparent;
     display: inline;
-    height: 37px;
-    width: 37px;
+    height: 40px;
+    width: 40px;
   }
 
   #filters ul {
@@ -847,7 +787,11 @@ body {
   }
 
   #end-container-high {
-    align-self: flex-start;
+    align-items: baseline;
+  }
+
+  #end-container-high i {
+    padding: 10px;
   }
 
   #container-housing {
