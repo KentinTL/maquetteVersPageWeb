@@ -922,8 +922,13 @@ footer li {
     height: 100px;
   }
 
+  .activity-card-lite img {
+    height: 100px;
+  }
+
   .activity-card-lite {
     margin-left: 0px;
+    height: 150px;
   }
 
   .cardX2 {
