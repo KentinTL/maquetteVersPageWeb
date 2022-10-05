@@ -243,7 +243,7 @@ nav li > a:link {
 }
 
 #housing-article {
-  background-color : F2F2F2;
+  background-color : #F2F2F2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -321,7 +321,7 @@ nav li > a:link {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  background-color : F2F2F2;
+  background-color : #F2F2F2;
   padding-top: 15px;
   width: 28%;
 }
@@ -494,7 +494,7 @@ nav li > a:link {
 
 /*FOOTER*/
 footer {
-  background-color : F2F2F2;
+  background-color : #F2F2F2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
