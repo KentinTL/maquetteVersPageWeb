@@ -260,6 +260,11 @@ nav li > a:link {
   justify-content: space-between;
 }
 
+#housing-article #housing-details a {
+  display: inherit;
+  margin: 0;
+}
+
 #housing-article a {
   font-weight: bold;
   display: block;
@@ -324,6 +329,11 @@ nav li > a:link {
   background-color : #F2F2F2;
   padding-top: 15px;
   width: 28%;
+}
+
+#housing-aside #aside-details a {
+  display: inherit;
+  margin: 0;
 }
 
 #aside-title {
@@ -409,6 +419,11 @@ nav li > a:link {
   flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 40px;
+}
+
+#container-activitys .activity-details a {
+  margin: 0;
+  display: inherit;
 }
 
 #activitys-details {
