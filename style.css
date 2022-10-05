@@ -84,6 +84,11 @@ nav li > a:link {
   color: #0065FC !important;
   border-top: solid 2px #0065FC ;
 }
+
+.gray-border :hover{
+  color: #0065FC !important;
+  border-top: solid 2px #0065FC ;
+}
 /*END HEADER*/
 
 /*BODY*/
@@ -114,15 +119,6 @@ nav li > a:link {
   margin-bottom: 15px;
 }
 
-#search-bar i {
-  background-color: #F2F2F2;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  font-size: 22px;
-  height: 53px;
-  padding: 12px;
-}
-
 #search-bar input {
   border-bottom: solid 1px #F2F2F2;
   border-left: none;
@@ -146,8 +142,8 @@ nav li > a:link {
 #search-bar button {
   background-color: #0065FC;
   border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -224,10 +220,11 @@ nav li > a:link {
 
 #end-container-high i {
   color: #0065FC;
+  font-size: 10px;
   margin-right: 0 auto;
   padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 9px;
+  padding-right: 9px;
   padding-top: 5px;
 }
   /* END CONTAINER-HIGH */
@@ -244,8 +241,7 @@ nav li > a:link {
 }
 
 #housing-article {
-  background-color: gray;
-  border-radius: 15px;
+  background-color : F2F2F2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -323,8 +319,7 @@ nav li > a:link {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  background-color: gray;
-  border-radius: 15px;
+  background-color : F2F2F2;
   padding-top: 15px;
   width: 28%;
 }
@@ -376,6 +371,7 @@ nav li > a:link {
   flex-grow: 0;
   flex-shrink: 1;
   flex-wrap: wrap;
+  padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   flex-direction: column;
@@ -496,7 +492,7 @@ nav li > a:link {
 
 /*FOOTER*/
 footer {
-  background-color: gray;
+  background-color : F2F2F2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -522,10 +518,10 @@ footer li {
 
 /*END FOOTER*/
 
-/* MEDIA */
+/* MEDIA RESPONSIVE MEDIA RESPONSIVE MEDIA RESPONSIVE */
 
 /* CLASSIC TABLET */
-@media screen and (max-width: 992) {
+@media screen and (max-width: 992px) {
   #body-page {
     padding-left: 25px;
     padding-right: 25px;
@@ -536,7 +532,9 @@ footer li {
   }
 
   header img {
+    height: 60px;
     padding-left: 20px;
+    width: 135px;
   }
 
   nav {
@@ -550,12 +548,18 @@ footer li {
     width: 100%;
   }
 
-  #blue-border {
+  .blue-border :hover{
+    color: #0065FC !important;
+    padding-bottom: 5px;
     border-bottom: solid 2px #0065FC ;
+    border-top: none;
   }
-
-  #grey-border {
-    border-bottom: solid 2px #F2F2F2;
+  
+  .gray-border :hover{
+    color: #0065FC !important;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #0065FC ;
+    border-top: none;
   }
 
   nav li {
@@ -575,7 +579,7 @@ footer li {
 
   #search-bar {
     justify-content: center;
-    align-items: end;
+    align-items: center;
   }
 
   #search-bar input {
@@ -601,6 +605,12 @@ footer li {
 
   #end-container-high {
     align-self: flex-start;
+    align-items: baseline;
+    margin-bottom: 40px;
+  }
+
+  #end-container-high .information {
+    margin-left: 5px;
   }
   /* END CONTAINER-HIGH */
 
@@ -609,14 +619,12 @@ footer li {
     width: 100%;  
   }
 
-  #housing-aside {
-    background-color: inherit;
-  }
-
   #aside-details {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
 
   .aside-card {
@@ -631,7 +639,8 @@ footer li {
   }
   
   #housing-article {
-    background-color: white;
+    margin-top: 25px;
+    padding: 10px;
   }
 
   #housing-details {
@@ -642,6 +651,7 @@ footer li {
   /* ACTIVITY */
   #activitys-details {
     text-align: center;
+    align-items: baseline;
   }
   .activity-card {
     height: 180px;
@@ -663,8 +673,6 @@ footer li {
 
   .cardX2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 70%;
   }
 
@@ -715,6 +723,8 @@ footer li {
 }
 /* END TABLET */
 
+/* MEDIA RESPONSIVE MEDIA RESPONSIVE MEDIA RESPONSIVE */
+
 /* PHONE */
 @media screen and (max-width: 768px) {
   /* REFACTORISATION */
@@ -742,6 +752,8 @@ footer li {
   }
   #img-princ img {
     width: 150px;
+    height: 75px;
+    margin-bottom: 25px;
   }
 
   nav {
@@ -790,8 +802,23 @@ footer li {
     text-align: left;
   }
 
+  #description h2 {
+    font-size: 16px;
+  }
+
   #search-bar {
     height: 37px;
+  }
+
+  #search-bar i {
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 22px;
+    height: 53px;
+    padding: 12px;
   }
 
   #search-bar button {
@@ -809,10 +836,14 @@ footer li {
   }
 
   #search-bar button i {
-    background-color: transparent;
+    background-color: inherit;
     display: inline;
-    height: 37px;
-    width: 37px;
+    height: 45px;
+    width: 45px;
+  }
+
+  #filters p {
+    font-size: 15px;
   }
 
   #filters ul {
@@ -821,10 +852,7 @@ footer li {
 
   #filters li {
     margin: 2px;
-  }
-
-  #end-container-high {
-    align-self: flex-start;
+    font-size: 15px;
   }
 
   #container-housing {
@@ -844,7 +872,7 @@ footer li {
   }
 
   .aside-card {
-    width: 80%;
+    width: 95%;
     margin-top: 10px;
     margin-bottom: 10px;
   } 
@@ -854,10 +882,6 @@ footer li {
     padding-right: 25px;
     width: 100%;
   }
-  
-  #housing-article {
-    background-color: white;
-  }
 
   #housing-details {
     width: 100%;
@@ -865,8 +889,13 @@ footer li {
   }
 
   .article-card {
-    height: 230px;
-    width: 80%;
+    height: 200px;
+    width: 95%;
+    padding: 0px;
+  }
+
+  .article-card img {
+    height: 120px;
   }
   
   #activitys-details {
@@ -874,21 +903,21 @@ footer li {
   }
 
   .activity-card {
-    height: 180px;
-    width: 80%;
+    height: 150px;
+    width: 95%;
   }
 
   .activity-card img {
-    height: 130px;
+    height: 100px;
   }
 
   .activity-card-lite-up {
-    height: 180px;
+    height: 150px;
     margin-left: 0px;
   }
 
   .activity-card-lite-up img {
-    height: 130px;
+    height: 100px;
   }
 
   .activity-card-lite {
@@ -898,12 +927,19 @@ footer li {
   .cardX2 {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    width: 95%;
   }
 
   #my-footer {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
     width: 100%;
+  }
+
+  #my-footer .footer-part {
+    margin-top: 20px;
   }
 }
